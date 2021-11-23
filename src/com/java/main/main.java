@@ -1,11 +1,24 @@
 package com.java.main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+//        System.out.println("Hello World");
 
-        Person person = new Person("001", "Justice", 24);
-        System.out.println(person.getName());
+//        Person person = new Person("001", "Justice", 24);
+//        System.out.println(person.getName());
+        List<Person> personList = new ArrayList<>();
+        personList.add(new Person("001", "Justice Owusu", 24));
+        personList.add(new Person("002", "Priscilla Owusu", 21));
+        personList.add(new Person("003", "Samuel", 25));
+        personList.add(new Person("002", "Andrews", 23));
+
+        for(Person person: personList){
+            System.out.println(person.getName());
+        }
+
 
     }
 
